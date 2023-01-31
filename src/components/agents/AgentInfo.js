@@ -26,7 +26,7 @@ const AgentInfo = () => {
         <h1 className="agentName">{agent?.displayName}</h1>
        
         <div className=" agentvideobg"> 
-      <video src={agentVideoObject[agent.displayName]} autoPlay loop muted />
+      <video src={agentVideoObject[agent.displayName]} autoPlay loop  />
    
     </div>
         <h1 className="agentDescription">{agent?.description}</h1>
