@@ -1,7 +1,7 @@
 import React from 'react'
 import Info from './Info'
 
-function Body() {
+function HomeBody() {
   return (
     <>
         <Info/>
@@ -10,4 +10,4 @@ function Body() {
   )
 }
 
-export default Body
+export default HomeBody;
