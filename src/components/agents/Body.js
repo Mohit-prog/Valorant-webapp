@@ -2,14 +2,8 @@ import { useEffect, useState } from "react";
 import AgentCard from "./AgentCard";
 import NoResults from "../common/NoResults";
 import ShimmerUI from "../common/ShimmerUI";
-import { Link } from "react-router-dom";
-
-const searchHandler = (googleText, agentList) => {
-  return agentList.filter((agent) =>
-    agent?.displayName?.toLowerCase().includes(googleText.toLowerCase())
-  );
-};
-
+import { searchHandler } from "../../utils/Helper";
+import useOnline from "../../utils/useOnline";
 const AgentsBody = () => {
   const [agentList, setAgentlist] = useState();
   const [filteredAgent, setFilteredAgent] = useState();
@@ -28,9 +22,13 @@ const AgentsBody = () => {
     setAgentlist(json?.data);
     setFilteredAgent(json?.data);
   }
- 
 
-  return (!agentList)? (
+
+   var isOnline = useOnline();
+   if(!isOnline)
+    return (<h1 > 🔴 Check your connection 🔴</h1>)
+
+  return !agentList ? (
     <ShimmerUI />
   ) : (
     <>
@@ -70,9 +68,7 @@ const AgentsBody = () => {
           <NoResults />
         ) : (
           filteredAgent.map((agent) => (
-           
-              <AgentCard {...agent}   key={agent.uuid}/>
-            
+            <AgentCard {...agent} key={agent.uuid} />
           ))
         )}
       </div>

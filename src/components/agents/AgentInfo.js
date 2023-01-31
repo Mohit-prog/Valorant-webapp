@@ -1,22 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ShimmerUI from "../common/ShimmerUI";
-import agentVideoObject from '../agents/agentvideoBG/agentVideoObject'
+import { agentVideoObject } from "../../Constants";
+import useAgentInfo from "../../utils/useAgentInfo";
+
 const AgentInfo = () => {
   const { name } = useParams();
-  const [agent, setAgent] = useState();
-  useEffect(() => {
-    getAgentInfo();
-  }, []);
-
-  async function getAgentInfo() {
-    const data = await fetch("https://valorant-api.com/v1/agents/" + name);
-    const json = await data?.json();
-
-    setAgent(json?.data);
-  }
-
-
+ 
+  const agent = useAgentInfo(name);
+  
   return !agent ? (
     <ShimmerUI />
   ) : (
