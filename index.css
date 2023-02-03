@@ -1,8 +1,4 @@
-body{
-    padding: 2px 7px 2px 2px;
-  margin: 0;
-    background-color:#38222F;/* #38222F;*/
-}
+
 .header{
     
     display: flex;
@@ -282,3 +278,9 @@ footer-bottom p{
     width:25%;
 }
 
+body{
+ 
+    background-color:#38222F;/* #38222F;*/
+    margin: 0;
+    padding: 0;
+}
