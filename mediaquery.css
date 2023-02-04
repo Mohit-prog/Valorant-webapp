@@ -1,0 +1,14 @@
+
+
+@media screen and (max-width: 536px) {
+    .greenButton{
+        border-left:5px solid #00b4cc ;
+        border-radius: 5px 5px 5px 5px;
+    }
+    .abilities {
+        flex-direction: column;
+    }
+    .abilityvalue{
+        margin-left: 17%;
+    }
+}
