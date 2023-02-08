@@ -30,6 +30,8 @@ body {
   list-style: none;
   color: #d3dae7;
   display: flex;
+  margin-right: 40px;
+  
 }
 .nav-items li {
   padding: 18px;
@@ -99,11 +101,11 @@ body {
 }
 .searchinput {
   border: 3px solid #00b4cc;
-  margin-left: 30%;
+  margin-left: 35%;
   margin-top: 15px;
   padding: 5px;
   height: 20px;
-  border-radius: 5px 0 0 5px;
+  border-radius: 5px 5px 5px 5px;
   outline: none;
   color: black;
   font-weight: 800;

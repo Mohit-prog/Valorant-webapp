@@ -1,14 +1,28 @@
 
 
 @media screen and (max-width: 536px) {
-    .greenButton{
-        border-left:5px solid #00b4cc ;
-        border-radius: 5px 5px 5px 5px;
-    }
+   
     .abilities {
         flex-direction: column;
     }
     .abilityvalue{
         margin-left: 17%;
+    }
+}
+@media screen and (max-width: 460px) {
+   
+    .header {
+        width:119%;
+    }
+    .footer{
+        width:119%;
+        bottom: -24rem;
+      
+    }
+    .footer-content{
+        height: 24rem;
+    }
+    .nav-items {
+        margin-right: inherit;
     }
 }

@@ -19,7 +19,7 @@ const navItems = (
     <li><Link to="/agents" className="text-link">Agents</Link></li>
     <li><Link to="/weapons" className="text-link">Weapons</Link></li>
     <li><Link to="/maps" className="text-link">Maps</Link></li>
-    <li><Link to="/mystats" className="text-link">My-Stats</Link></li>
+    {/* <li><Link to="/mystats" className="text-link">My-Stats</Link></li> */}
   </ul>
 );
 //final Header

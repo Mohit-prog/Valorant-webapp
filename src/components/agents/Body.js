@@ -23,10 +23,8 @@ const AgentsBody = () => {
     setFilteredAgent(json?.data);
   }
 
-
-   var isOnline = useOnline();
-   if(!isOnline)
-    return (<h1 > 🔴 Check your connection 🔴</h1>)
+  var isOnline = useOnline();
+  if (!isOnline) return <h1> 🔴 Check your connection 🔴</h1>;
 
   return !agentList ? (
     <ShimmerUI />
@@ -39,18 +37,11 @@ const AgentsBody = () => {
           value={googleText}
           onChange={(e) => {
             setGoogleText(e.target.value);
-          }}
-          className="searchinput"
-        />
-        <button
-          className="greenButton"
-          onClick={() => {
             const data = searchHandler(googleText, agentList);
             setFilteredAgent(data);
           }}
-        >
-          go...
-        </button>
+          className="searchinput"
+        />
         {filteredAgent.length != agentList.length ? (
           <button
             className="clearButton greenButton"
