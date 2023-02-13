@@ -5,7 +5,7 @@ import HomeBody from "./components/Home/Body";
 import AgentsBody from "./components/agents/Body";
 import WeaponBody from "./components/weapons/Body"
 import MapsBody from "./components/maps/Body";
-import MyStatsBody from "./components/mystats/Body";
+
 import Footer from "./components/common/Footer";
 
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
@@ -43,9 +43,7 @@ const approuter = createBrowserRouter([
       { 
         path: "/maps", 
         element: <MapsBody /> },
-      {
-         path: "/mystats",
-          element: <MyStatsBody /> },
+      
       {
         path: "/agents/:name",
         element: <AgentInfo />
