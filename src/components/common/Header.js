@@ -27,6 +27,7 @@ const Header = () => {
   return (
     <div className="header">
       {valorantlogo}
+      <h1 className="headertitle">Valorant WebApp</h1>
       {navItems}
     </div>
   );

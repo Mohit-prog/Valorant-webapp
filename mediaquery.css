@@ -8,6 +8,7 @@
     .abilityvalue{
         margin-left: 17%;
     }
+   
 }
 @media screen and (max-width: 460px) {
    
@@ -25,4 +26,5 @@
     .nav-items {
         margin-right: inherit;
     }
+    
 }
