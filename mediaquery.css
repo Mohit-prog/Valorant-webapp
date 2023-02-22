@@ -1,5 +1,14 @@
 
-
+@media screen and (max-width: 818px) {
+   
+    .headertitle{
+        margin-left: 10%;
+        margin-top: 3%;
+        font-size:large;
+    }
+   
+   
+}
 @media screen and (max-width: 536px) {
    
     .abilities {
@@ -8,6 +17,12 @@
     .abilityvalue{
         margin-left: 17%;
     }
+   
+    
+    .headertitle{
+        display: none;
+    }
+   
    
 }
 @media screen and (max-width: 460px) {
@@ -26,5 +41,31 @@
     .nav-items {
         margin-right: inherit;
     }
+ 
+    .toggle-button{
+        display: flex;
+
+        
+    }
+    .nav-items{
+        display: none;
+        width: 100%;
+       flex-direction: column;
+       margin-left: 20%;
+      
+    }
+    .nav-items.active{
+        display: flex;
+    }
+
+    .header{ 
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .text-link{
+        padding: .5rem 1rem;
+    }
+    
     
 }
+

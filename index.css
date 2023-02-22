@@ -22,13 +22,15 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: #172038;
-  height: 80px;
+  height: auto;
   width: 100%;
   border: 2px solid grey;
   border-radius: 0 0 11 11;
 }
 .headertitle{
   color: white;
+  text-shadow: 5px 5px #000;
+  
 }
 .nav-items {
   list-style: none;
@@ -42,8 +44,8 @@ body {
   font-family: fantasy;
 }
 .valoranticon {
-  margin: 10% 0 10% 20%;
-  height: 80%;
+  margin: 10px 10px;
+  height: 70px;
 }
 .text-link,
 .linkbox {
@@ -60,6 +62,26 @@ body {
 .nav-items li a:focus{
     color: green;
 }
+
+.toggle-button{
+  position: absolute;
+  top: 1.9rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+.toggle-button .bar{
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+
+
 /*******************/
 .displaycard {
   margin: 30px;
