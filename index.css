@@ -28,20 +28,28 @@ body {
   border-radius: 0 0 11 11;
 }
 .headertitle{
+  padding: 5px;
   color: white;
-  text-shadow: 5px 5px #000;
-  
+  text-shadow: 2px 2px #000;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-image: linear-gradient(to right, #130335, #882b2f, #130335);
+  border-radius: 5%;
 }
 .nav-items {
   list-style: none;
   color: #d3dae7;
   display: flex;
   margin-right: 40px;
+ 
+
   
 }
+
+
 .nav-items li {
   padding: 18px;
-  font-family: fantasy;
+  font-family: cursive;
+
 }
 .valoranticon {
   margin: 10px 10px;
@@ -53,16 +61,6 @@ body {
   text-decoration: inherit;
 }
 
-
-.nav-items li a:hover{
-    background-color: rgb(122, 23, 23);
-    border: 4px solid rgb(122, 23, 23);
-    color: #ffffff;
-}
-.nav-items li a:focus{
-    color: green;
-}
-
 .toggle-button{
   position: absolute;
   top: 1.9rem;
@@ -72,12 +70,6 @@ body {
   justify-content: space-between;
   width: 30px;
   height: 21px;
-}
-.toggle-button .bar{
-  height: 3px;
-  width: 100%;
-  background-color: white;
-  border-radius: 10px;
 }
 
 

@@ -1,7 +1,8 @@
 import Logoicon from "../../images/valoIcon.png";
-import { Link } from "react-router-dom";
+import hamburgerIcon from "../../images/hamburger.png"
+import { NavLink } from "react-router-dom";
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 /********Header**********/
 //state
@@ -9,50 +10,98 @@ import { useRef } from "react";
 //logo
 const valorantlogo = (
   <>
-  
-     <img src={Logoicon} alt="Valorant" className="valoranticon" /> 
-  <h1 className="headertitle">Valorant WebApp</h1>
+    <img src={Logoicon} alt="Valorant" className="valoranticon" />
+    <h1 className="headertitle">Valorant WebApp</h1>
   </>
 );
 
 //listItems
 
-const NavItems =()=> {
+const NavItems = () => {
+  const displayNavItem = useRef();
+  const hamburgerRef = useRef();
+  const [activeTab, setActiveTab] = useState("home");
 
-  const navRef = useRef();
- 
-  function clickHandler(){
-    window.addEventListener('click',()=>{
-       
-      navRef.current.classList.toggle('active');
-        console.log("clicked");
-    })
-}
+  function clickHandler() {
+    window.addEventListener("click", () => {
+      displayNavItem?.current?.classList?.toggle("active");
+      hamburgerRef?.current?.classList?.toggle("active");
 
+    });
+  }
 
-  return(<>
-  <a href="#" className="toggle-button" onClick={clickHandler()}>
-   <span className='bar'></span>
-   <span className='bar'></span>
-   <span className='bar'></span>
-    </a>
+  function setMarked() {
+    return activeTab
+      ? {
+        backgroundColor: "#296919",
+        border: "18px solid  #296919",
+        borderRadius:"10%",
+        textShadow : "1px 1px #000",
+        fontWeight:"800"
+
+        }:null;
   
-  <ul className="nav-items" ref={navRef}>
-    <li><Link to="/" className="text-link">Home</Link></li>
-    <li><Link to="/agents" className="text-link">Agents</Link></li>
-    <li><Link to="/weapons" className="text-link">Weapons</Link></li>
-    <li><Link to="/maps" className="text-link">Maps</Link></li>
-    {/* <li><Link to="/mystats" className="text-link">My-Stats</Link></li> */}
-  </ul>
-  </>
-)};
+  }
+
+  return (
+    <>
+      <a href="#" className="toggle-button" onClick={clickHandler()}>
+      <img src={hamburgerIcon} alt="hamburger" className="hamburger" ref={hamburgerRef}/>
+      </a>
+
+      <ul className="nav-items" ref={displayNavItem}>
+        <li>
+          <NavLink
+            to="/"
+            className="text-link"
+            style={(activeTab==="home")?setMarked():null}
+            onClick={()=>setActiveTab("home")}
+          >
+            Home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/agents"
+            className="text-link"
+            style={(activeTab==="agents")?setMarked():null}
+            onClick={()=>setActiveTab("agents")}
+          >
+            Agents
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/weapons"
+            className="text-link"
+            style={(activeTab==="weapons")?setMarked():null}
+            onClick={()=>setActiveTab("weapons")}
+          >
+            Weapons
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/maps"
+            className="text-link"
+            style={(activeTab==="maps")?setMarked():null}
+            onClick={()=>setActiveTab("maps")}
+          >
+            Maps
+          </NavLink>
+        </li>
+        {/* <li><Link to="/mystats" className="text-link">My-Stats</Link></li> */}
+      </ul>
+    </>
+  );
+};
 //final Header
 const Header = () => {
   return (
     <div className="header">
       {valorantlogo}
-      
-      <NavItems/>
+
+      <NavItems />
     </div>
   );
 };
