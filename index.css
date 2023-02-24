@@ -63,6 +63,7 @@
 
 /**********/
 .homeagentsbackground {
+
   height: 70vh;
   width: 100vw;
   z-index: -1;
@@ -73,7 +74,7 @@
   height:70vh;
   width:50vw;
   transform: translate(50%, 0%);
-  margin-top:7rem;
+  margin-top:7.5rem;
 }
 .infosection{
   margin-left: 15%;
@@ -227,9 +228,15 @@ audio::-webkit-media-controls-volume-slider {
 /*****footer***/
 #page-container {
   position: relative;
-  min-height: 100vh;
+  min-height: 100%;
+ 
   
   
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 .footer {
   position: absolute;
@@ -342,9 +349,5 @@ footer-bottom p {
   width: 25%;
 }
 
-body,html {
-  margin: 0;
-  padding: 0;
- overflow-x: hidden;
-}
+
 /*background body*/
