@@ -19,7 +19,7 @@ const AgentInfo = () => {
        
         <div className=" agentvideobg"> 
       <video src={agentVideoObject[agent.displayName] }  style={{width: "90vw",
-    height: "40vh"}} autoPlay loop  />
+    height: "40vh",borderRadius:"10%"}} autoPlay loop muted />
    
     </div>
         <h1 className="agentDescription">{agent?.description}</h1>

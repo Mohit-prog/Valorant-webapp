@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className="footer">
       <div class="footer-content">
         <h3>Developed By Mohit 🙂</h3>
-        <p> Java / Javascript Developer / Software Engineer / Gamer</p>
+        <p> Java / Javascript Developer <br></br>/ Software Engineer / Gamer</p>
         <ul className="socials">
       
     <li><a href="/"><img src={facebookIcon}/></a></li>

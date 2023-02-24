@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { agentBackground } from "../../utils/Styles";
 //agent card
-
+//https://playvalorant.com/page-data/en-us/agents/sage/page-data.json
 const AgentCard = (props) => {
   const [element, setElement] = useState();
 
@@ -28,7 +28,7 @@ const AgentCard = (props) => {
           setElement(element);
         }}
         className="agentsoundbar hideaudio"
-        controlsList="nodownload noplaybackrate"
+        controlsList="nodownload noplaybackrate "
         src={
           "https://media.valorant-api.com/sounds/" +
           props.voiceLine.mediaList[0].id +

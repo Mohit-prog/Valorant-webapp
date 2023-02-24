@@ -7,6 +7,9 @@ const WeaponBody = () => {
     
 const [weapons,setWeapons] = useState();
 
+useEffect(() => {
+    getWeaponDetail();
+  }, []);
 
   async function getWeaponDetail() {
     const data = await fetch(
@@ -15,16 +18,8 @@ const [weapons,setWeapons] = useState();
       const json = await data?.json();
       
       setWeapons(json?.data);
-      console.log("api");
       
   }
-
-  useEffect(() => {
-    getWeaponDetail();
-    console.log("useeffect");
-  });
-
-console.log("render");
   return (!weapons)?<ShimmerUI/>:(
     <div className='cardlist'>
         {

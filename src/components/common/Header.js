@@ -24,8 +24,11 @@ const NavItems = () => {
 
   function clickHandler() {
     window.addEventListener("click", () => {
-      displayNavItem?.current?.classList?.toggle("active");
+      
       hamburgerRef?.current?.classList?.toggle("active");
+      displayNavItem?.current?.classList?.toggle("active");
+      
+      
 
     });
   }
@@ -45,7 +48,7 @@ const NavItems = () => {
 
   return (
     <>
-      <a href="#" className="toggle-button" onClick={clickHandler()}>
+      <a className="toggle-button" onClick={clickHandler()}>
       <img src={hamburgerIcon} alt="hamburger" className="hamburger" ref={hamburgerRef}/>
       </a>
 

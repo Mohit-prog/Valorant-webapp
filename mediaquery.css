@@ -1,4 +1,51 @@
 
+@media screen and (max-width: 1050px) {
+    .valorantText{
+        letter-spacing: 25px;
+       font-size: 5rem;
+        margin-top: -23%;
+        margin-left: 20%;
+       
+      }
+      .introvideo{
+        height: 45%;
+        width: 40%;
+      }
+}
+@media screen and (max-width: 900px) {
+   
+  .homeagentsicon{
+      width: 80vw;
+      transform: translate(10%,0);
+      height:45vh ;
+  }
+  .homeagentsbackground{
+    height:45vh ;
+  }
+   
+   
+}
+@media screen and (max-width: 700px) {
+    .valorantText{
+        letter-spacing: 20px;
+       font-size: 4rem;
+        margin-top: -25%;
+        margin-left: 23%;
+       
+      }
+      .intro{
+        flex-direction: column;
+        
+      }
+      .intro h3{
+        width: 70%;
+      }
+      .introvideo{
+        height: 50%;
+        width: 50%;
+        margin-left: 10%;
+      }
+}
 @media screen and (max-width: 818px) {
    
     .headertitle{
@@ -10,7 +57,8 @@
    
    
 }
-@media screen and (max-width: 536px) {
+
+@media screen and (max-width: 649px) {
    
     .abilities {
         flex-direction: column;
@@ -26,18 +74,46 @@
    
    
 }
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 590px) {
+    .valorantText{
+        letter-spacing: 20px;
+       font-size: 3rem;
+      
+        margin-left: 20%;
+       
+      }
+      .intro h3{
+        width: 70%;
+      }
+      .intro{
+        flex-direction: column;
+        
+      }
+    
+      .introvideo{
+        height: 50%;
+        width: 50%;
+        margin-left: 10%;
+      }
+}
+@media screen and (max-width: 502px) {
    
     .header {
-        width:119%;
+        width:100%;
+    }
+    .socials a img {
+        width: 35px;
     }
     .footer{
-        width:119%;
-        bottom: -24rem;
+        width:100%;
+        bottom: -27rem;
       
     }
     .footer-content{
         height: 24rem;
+    }
+    .footer-content p{
+        font-size: 16px;
     }
     .nav-items {
         margin-right: inherit;
@@ -61,7 +137,7 @@
     }
   .hamburger.active{
   transform: rotate(90deg);
-  transition: 0.6s;
+  transition: 0.2s;
   }
     .header{ 
         flex-direction: column;
@@ -70,7 +146,30 @@
     .text-link{
         padding: .5rem 1rem;
     }
-    
+    .socials{
+        margin-left: -30px;
+    }
     
 }
+
+@media screen and (max-width: 502px) {
+
+    .valorantText{
+        letter-spacing: 14px;
+       font-size: 2rem;
+      
+       
+      }
+      .intro h3{
+        width: 90%;
+      }
+      .introvideo{
+        height: 65%;
+        width: 65%;
+        margin-left: 10%;
+      }
+      
+}
+
+
 
