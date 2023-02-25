@@ -1,0 +1,25 @@
+.guideposter{
+     height: 37vh;
+      width: 100vw;
+}
+.guidesection{
+  
+    padding-left: 5%;
+  
+    width: 80%;
+}
+.guideheading{
+    color: #09243f;
+    font-size: 2.5rem;
+ 
+}
+.guideimages{
+    height: 45%;
+    width :85%;
+    margin-left: 20%;
+}
+.guidetext{
+    color: whitesmoke;
+    font-family: DINNextW1G,arial,georgia,sans-serif;
+    font-size: 1.3rem;
+}

@@ -5,6 +5,7 @@ import HomeBody from "./components/Home/Body";
 import AgentsBody from "./components/agents/Body";
 import WeaponBody from "./components/weapons/Body"
 import MapsBody from "./components/maps/Body";
+import BeginnersGuide from "./components/Home/BeginnersGuide";
 
 import Footer from "./components/common/Footer";
 
@@ -48,6 +49,10 @@ const approuter = createBrowserRouter([
         path: "/agents/:name",
         element: <AgentInfo />
       },
+      {
+        path:"/beginners-guide",
+        element:<BeginnersGuide/>
+      }
     ],
   },
 ]);
