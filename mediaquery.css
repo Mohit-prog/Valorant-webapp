@@ -11,6 +11,9 @@
         height: 45%;
         width: 40%;
       }
+      .weapon-img{
+        width: 40%;
+      }
 }
 @media screen and (max-width: 900px) {
    
@@ -100,6 +103,11 @@
        overflow-x: hidden;
        
       }
+      .skin-img{
+        margin-left: 30%;
+
+      }
+
 }
 @media screen and (max-width: 502px) {
    
@@ -155,28 +163,27 @@
         margin-left: -30px;
     }
     
-}
-
-@media screen and (max-width: 502px) {
-
     .valorantText{
-        letter-spacing: 10px;
-       font-size: 1.7rem;
-      
-       
-      }
-      .intro h3{
-        width: 90%;
-      }
-      .introvideo{
-        height: 65%;
-        width: 65%;
-        margin-left: 10%;
-      }
+      letter-spacing: 10px;
+     font-size: 1.7rem;
+    
      
-      
-     
+    }
+    .intro h3{
+      width: 90%;
+    }
+    .introvideo{
+      height: 65%;
+      width: 65%;
+      margin-left: 10%;
+    }
+   
+    .weapon-img{
+      width: 60%;
+      margin-left: 20%;
+    }
 
+    
 }
 
 

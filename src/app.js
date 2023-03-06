@@ -3,7 +3,8 @@ import ReactDOM from "react-dom/client";
 import Header from "./components/common/Header";
 import HomeBody from "./components/Home/Body";
 import AgentsBody from "./components/agents/Body";
-import WeaponBody from "./components/weapons/Body"
+import WeaponBody from "./components/weapons/Body";
+import WeaponInfo from "./components/weapons/WeaponInfo";
 import MapsBody from "./components/maps/Body";
 import BeginnersGuide from "./components/Home/BeginnersGuide";
 
@@ -44,6 +45,9 @@ const approuter = createBrowserRouter([
       { 
         path: "/maps", 
         element: <MapsBody /> },
+        { 
+          path: "/weapons/:name",
+           element: <WeaponInfo /> },
       
       {
         path: "/agents/:name",

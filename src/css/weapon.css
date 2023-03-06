@@ -1,0 +1,64 @@
+/*******************/
+
+.weapon-page{
+  margin: 5px;;
+  }
+  .weapon-name{
+      text-align:center ;
+      color: rgb(47, 13, 109);
+  }
+  .weapon-about{
+      max-width: 80%;
+      text-align: center;
+      color: white;
+      margin-left: 10%;
+  }
+  .weapon-img{
+      margin-top: 30px;
+      margin-left: 35%;
+  }
+  
+  
+  .weapon-info{
+  margin-left: 20%;
+  }
+  
+  
+  .skins-heading{
+  margin-left: 40px;
+  }
+  .weapon-skins{
+      display: flex;
+      background-color:transparent;
+   flex-wrap: wrap;
+    
+  }
+  .skin-container{
+      margin-left: 2%;
+      margin-bottom: 10%;
+      overflow: hidden;
+    
+      display: flex;
+      flex-direction: column;
+  }
+  .skin-img{
+      
+     height: 60px;
+      width: 60%;
+     
+    
+  }
+  .skin-name{
+   
+      color: whitesmoke;
+    
+     margin-top: 5px;
+      text-align: center;
+      padding: 0px;
+      font-size: 1.1rem;
+  }
+  
+  .skin-img:hover{
+      transform: scale3d(1.2, 1.2, 1.2);
+  
+  }
