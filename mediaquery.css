@@ -25,7 +25,7 @@
   .homeagentsbackground{
     height:45vh ;
   }
-   
+ 
    
 }
 @media screen and (max-width: 700px) {
@@ -68,7 +68,8 @@
         flex-direction: column;
     }
     .abilityvalue{
-        margin-left: 17%;
+        margin-left: 10%;
+        width: 80%;
     }
    
     
@@ -183,6 +184,16 @@
       margin-left: 20%;
     }
 
+    .abilityvideo{
+      height: 10%;
+      width: 100%;
+    }
+    .abilityvalue{
+      margin-left: 5%;
+      width: 90%;
+  }
+ 
+     
     
 }
 

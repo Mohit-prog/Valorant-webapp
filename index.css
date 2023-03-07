@@ -172,7 +172,7 @@ border: 1px solid blueviolet;
   margin-left: 35%;
   margin-top: 15px;
   padding: 5px;
-  height: 20px;
+  height: 40px;
   border-radius: 5px 5px 5px 5px;
   outline: none;
   color: black;
@@ -335,11 +335,12 @@ footer-bottom p {
   display: flex;
 
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .abilityvalue {
   height: 50%;
-  width: 50%;
-  margin: 10px;
+  width: 40%;
+  margin-left: 5%;
 }
 .abilityvalue h1{
   color: #00b4cc;
@@ -347,6 +348,8 @@ footer-bottom p {
 .abilityvalueimg {
   height: 25%;
   width: 25%;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 
