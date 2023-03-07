@@ -17,10 +17,12 @@ const AgentInfo = () => {
       
         <h1 className="agentName">{agent?.displayName}</h1>
        
-        <div className=" agentvideobg"> 
+        <div className=" agentvideobg"> {
+          (agent?.displayName!="Gekko")?
       <video src={agentVideoObject[agent.displayName] }  style={{width: "90vw",
-    height: "40vh",borderRadius:"10%"}} autoPlay loop muted />
-   
+    height: "40vh",borderRadius:"10%"}} autoPlay loop muted  />:<video src={agentVideoObject[agent.displayName] }  style={{width: "90vw",
+    height: "40vh",borderRadius:"10%"}} autoPlay loop   />
+   }
     </div>
         <h1 className="agentDescription">{agent?.description}</h1>
         <div className="abilities">

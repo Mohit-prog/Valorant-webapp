@@ -18,6 +18,7 @@ import chamber from "./videos/agentVideos/chamber.mp4";
 import harbor from "./videos/agentVideos/harbor.mp4";
 import phenoix from "./videos/agentVideos/phenoix.mp4";
 import omen from "./videos/agentVideos/omen.mp4";
+import gekko from "./videos/agentVideos/gekko.mp4"
 
 export const agentVideoObject = {
   Sage: sage,
@@ -40,6 +41,7 @@ export const agentVideoObject = {
   Chamber: chamber,
   Harbor: harbor,
   Phoenix: phenoix,
+  Gekko:gekko
 };
 
 
