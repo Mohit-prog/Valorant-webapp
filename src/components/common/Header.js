@@ -1,5 +1,6 @@
 import Logoicon from "../../images/valoIcon.png";
-import hamburgerIcon from "../../images/hamburger.png"
+import hamburgerIcon from "../../images/hamburger.png";
+import cancelIcon from "../../images/cancel.png";
 import { NavLink } from "react-router-dom";
 
 import { useRef, useState } from "react";
@@ -20,36 +21,56 @@ const valorantlogo = (
 const NavItems = () => {
   const displayNavItem = useRef();
   const hamburgerRef = useRef();
+ 
   const [activeTab, setActiveTab] = useState("home");
+  const [close, setClose] = useState(false);
 
   function clickHandler() {
-    window.addEventListener("click", () => {
-      
-      hamburgerRef?.current?.classList?.toggle("active");
-      displayNavItem?.current?.classList?.toggle("active");
-      
-      
+    if(close){
+      hamburgerRef?.current?.classList?.remove('active')
+      displayNavItem?.current?.classList?.remove("active");
+    }
+    else{
+      hamburgerRef?.current?.classList?.add("active");
+      displayNavItem?.current?.classList?.add("active");
+    }
+    
 
-    });
+    setClose(!close);
   }
 
   function setMarked() {
     return activeTab
       ? {
-        backgroundColor: "#296919",
-        border: "18px solid  #296919",
-        borderRadius:"10%",
-        textShadow : "1px 1px #000",
-        fontWeight:"800"
-
-        }:null;
-  
+          backgroundColor: "#296919",
+          border: "18px solid  #296919",
+          borderRadius: "10%",
+          textShadow: "1px 1px #000",
+          fontWeight: "800",
+        }
+      : null;
   }
 
   return (
     <>
-      <a className="toggle-button" onClick={clickHandler()}>
-      <img src={hamburgerIcon} alt="hamburger" className="hamburger" ref={hamburgerRef}/>
+      
+      <a className="toggle-button" onClick={() => clickHandler()}>
+      {console.log(close)}
+        {close ? (
+          <img
+            src={cancelIcon}
+            alt="cancel"
+            className="hamburger"
+           
+          />
+        ) : (
+          <img
+            src={hamburgerIcon}
+            alt="hamburger"
+            className="hamburger"
+            ref={hamburgerRef}
+          />
+        )}
       </a>
 
       <ul className="nav-items" ref={displayNavItem}>
@@ -57,8 +78,11 @@ const NavItems = () => {
           <NavLink
             to="/"
             className="text-link"
-            style={(activeTab==="home")?setMarked():null}
-            onClick={()=>setActiveTab("home")}
+            style={activeTab === "home" ? setMarked() : null}
+            onClick={() => {
+              setActiveTab("home");
+              clickHandler();
+            }}
           >
             Home
           </NavLink>
@@ -67,8 +91,11 @@ const NavItems = () => {
           <NavLink
             to="/agents"
             className="text-link"
-            style={(activeTab==="agents")?setMarked():null}
-            onClick={()=>setActiveTab("agents")}
+            style={activeTab === "agents" ? setMarked() : null}
+            onClick={() => {
+              setActiveTab("agents");
+              clickHandler();
+            }}
           >
             Agents
           </NavLink>
@@ -77,8 +104,11 @@ const NavItems = () => {
           <NavLink
             to="/weapons"
             className="text-link"
-            style={(activeTab==="weapons")?setMarked():null}
-            onClick={()=>setActiveTab("weapons")}
+            style={activeTab === "weapons" ? setMarked() : null}
+            onClick={() => {
+              setActiveTab("weapons");
+              clickHandler();
+            }}
           >
             Weapons
           </NavLink>
@@ -87,8 +117,11 @@ const NavItems = () => {
           <NavLink
             to="/maps"
             className="text-link"
-            style={(activeTab==="maps")?setMarked():null}
-            onClick={()=>setActiveTab("maps")}
+            style={activeTab === "maps" ? setMarked() : null}
+            onClick={() => {
+              setActiveTab("maps");
+              clickHandler();
+            }}
           >
             Maps
           </NavLink>
@@ -99,6 +132,7 @@ const NavItems = () => {
   );
 };
 //final Header
+
 const Header = () => {
   return (
     <div className="header">
