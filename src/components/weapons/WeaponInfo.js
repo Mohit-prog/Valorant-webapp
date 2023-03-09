@@ -21,7 +21,7 @@ const WeaponInfo = () => {
 
   return (
     <div className="weapon-page">
-      <h1 className="weapon-name">{weapon?.displayName}</h1>
+      <h1 className="title-name">{weapon?.displayName}</h1>
       <img className="weapon-img" src={weapon?.displayIcon} />
 
       <h3 className="weapon-about">

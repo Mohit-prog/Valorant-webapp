@@ -55,7 +55,7 @@ const NavItems = () => {
     <>
       
       <a className="toggle-button" onClick={() => clickHandler()}>
-      {console.log(close)}
+      
         {close ? (
           <img
             src={cancelIcon}

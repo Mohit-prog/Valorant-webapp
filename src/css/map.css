@@ -1,0 +1,13 @@
+.map-image{
+   
+max-height: 200px;
+width: 80%;
+   margin-left: 10%;
+}
+
+@media screen and (min-width: 500px) {
+    .map-image{
+   
+   max-height: 680px;
+    }
+}

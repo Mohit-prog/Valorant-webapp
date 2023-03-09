@@ -9,3 +9,14 @@ export const agentBackground=(props) =>{
       return background;
   };
 
+  export const navActive=() =>{
+    
+    const navStyle = {
+         backgroundImage: "url(" + props.background + ")",
+         backgroundSize: "cover",
+         backgroundRepeat: "no-repeat",
+         backgroundPosition: "center",
+       };
+       return navStyle;
+   };
+ 

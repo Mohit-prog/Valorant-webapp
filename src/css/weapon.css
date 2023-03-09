@@ -3,11 +3,11 @@
 .weapon-page{
   margin: 5px;;
   }
-  .weapon-name{
+  .title-name{
       text-align:center ;
       color: rgb(47, 13, 109);
   }
-  .weapon-about{
+  .para-about{
       max-width: 80%;
       text-align: center;
       color: white;

@@ -94,3 +94,15 @@ path.two {
         fill: white;
     }
 }
+.title-name{
+    text-align:center ;
+    color: rgb(47, 13, 109);
+}
+
+
+.para-about{
+    max-width: 80%;
+    text-align: center;
+    color: white;
+    margin-left: 10%;
+}

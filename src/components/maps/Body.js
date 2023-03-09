@@ -1,14 +1,35 @@
+import { useState, useEffect } from "react";
+import { mapData } from "../../Constants";
+import ShimmerUI from "../common/ShimmerUI";
+import MapCard from "./MapCard";
 
+const MapsBody = () => {
+  const [maps, setMaps] = useState();
 
-const MapsBody=()=>{
+  useEffect(() => {
+    getMapsDetail();
+  }, []);
 
-    return(
-        <>
-            <div className="weapons">
-                <h1>Maps Card Here....</h1>
-            </div>
-        </>
-    )
-}
+   function getMapsDetail() {
+
+     setMaps(mapData);
+   
+    
+  }
+  return !maps ? (
+    <ShimmerUI />
+  ) : (
+    <div className="cardlist">
+      {
+            
+            maps.map((map) => (
+           
+           <MapCard map={map}   key={map.map_name}/>
+         
+       ))
+        }
+    </div>
+  );
+};
 
 export default MapsBody;

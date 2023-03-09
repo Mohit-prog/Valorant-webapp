@@ -1,3 +1,4 @@
+import { mapData } from "../Constants";
 
 
 
@@ -8,3 +9,8 @@ export const searchHandler = (googleText, agentList) => {
   };
   
  
+export const getMapDetail=(mapName)=>{
+  const maps = mapData;
+  return maps.filter(map=>map.map_name===mapName);
+
+}

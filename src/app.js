@@ -13,6 +13,7 @@ import Footer from "./components/common/Footer";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import ErrorPage from "./components/common/ErrorPage";
 import AgentInfo from "./components/agents/AgentInfo";
+import MapInfo from "./components/maps/MapInfo";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -45,6 +46,9 @@ const approuter = createBrowserRouter([
       { 
         path: "/maps", 
         element: <MapsBody /> },
+        { 
+          path: "/maps/:name", 
+          element: <MapInfo /> },
         { 
           path: "/weapons/:name",
            element: <WeaponInfo /> },
