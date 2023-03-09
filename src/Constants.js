@@ -43,8 +43,12 @@ export const agentVideoObject = {
   Phoenix: phenoix,
   Gekko: gekko,
 };
-
-export const abilityLink = {
+export const agentHeader =
+  "CREATIVITY IS YOUR GREATEST WEAPON. More than guns and bullets, you’ll choose an Agent armed with adaptive, swift, and lethal abilities that create opportunities to let your gunplay shine. No two Agents play alike, just as no two highlight reels will look the same.";
+export const mapHeader =
+  "Each map is a playground to showcase your creative thinking. Purpose-built for team strategies, spectacular plays, and clutch moments. Make the play others will imitate for years to come.";
+export const weaponHeader="Agents have different variations of weapons, typically firearms, to cater to specific playstyles or metas. Weapons are separated by two categories, Sidearms and Primary weapons. Sidearms consists of pistols, whilst primaries include SMGs, shotguns, rifles, sniper rifles, and machine guns."
+  export const abilityLink = {
   //gekko
   Wingman:
     "https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt79a9f8119f366ad1/64029afe10329144ff021282/Website_Gekko_Wingman_Stun_FNL.mp4",

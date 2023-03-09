@@ -4,6 +4,7 @@ import NoResults from "../common/NoResults";
 import ShimmerUI from "../common/ShimmerUI";
 import { searchHandler } from "../../utils/Helper";
 import useOnline from "../../utils/useOnline";
+import { agentHeader } from "../../Constants";
 const AgentsBody = () => {
   const [agentList, setAgentlist] = useState();
   const [filteredAgent, setFilteredAgent] = useState();
@@ -30,6 +31,9 @@ const AgentsBody = () => {
     <ShimmerUI />
   ) : (
     <>
+    <h3 className="para-about">
+      {agentHeader}
+    </h3>
       <div className="searchbar">
         <input
           type="text"

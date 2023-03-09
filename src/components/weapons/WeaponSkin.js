@@ -18,9 +18,11 @@ const WeaponSkin = (props) => {
   return (
     <>
         <div className='skin-container'>
+        <div className='skindiv'>
         <img className ='skin-img' src={props.skin.displayIcon}/>
         
             <div className='skin-name'>{console.log(skinName)}{skinName}</div>
+            </div>
         </div>
         
     </>

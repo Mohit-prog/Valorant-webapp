@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { mapData } from "../../Constants";
+import { mapData, mapHeader } from "../../Constants";
 import ShimmerUI from "../common/ShimmerUI";
 import MapCard from "./MapCard";
 
@@ -20,6 +20,9 @@ const MapsBody = () => {
     <ShimmerUI />
   ) : (
     <div className="cardlist">
+    <h3 className="para-about">
+              {mapHeader}
+              </h3>
       {
             
             maps.map((map) => (
