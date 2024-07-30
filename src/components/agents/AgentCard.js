@@ -3,10 +3,16 @@ import audioIcon from "../../images/audio.png";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { agentBackground } from "../../utils/Styles";
+import { voiceLines } from "../../Constants";
+import isoVoice from "../../videos/IsoMatchStart6.wav"
+import isoVoice from "../../videos/IsoMatchStart6.wav"
+import cloveVoice from "../../videos/CloveMatchStart7.wav"
+
 //agent card
 //https://playvalorant.com/page-data/en-us/agents/sage/page-data.json
 const AgentCard = (props) => {
   const [element, setElement] = useState();
+  console.log(props)
 
   return (
     <div className="displaycard" style={agentBackground(props)}>
@@ -29,9 +35,12 @@ const AgentCard = (props) => {
         }}
         className="agentsoundbar hideaudio"
         controlsList="nodownload noplaybackrate "
+        
         src={
+          props.displayName=='Iso'?isoVoice:
+          props.displayName=='Clove'?cloveVoice:
           "https://media.valorant-api.com/sounds/" +
-          props.voiceLine.mediaList[0].id +
+          voiceLines[props.displayName] +
           ".wav"
         }
         controls

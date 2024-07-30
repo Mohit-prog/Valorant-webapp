@@ -19,6 +19,7 @@ import harbor from "./videos/agentVideos/harbor.mp4";
 import phenoix from "./videos/agentVideos/phenoix.mp4";
 import omen from "./videos/agentVideos/omen.mp4";
 import gekko from "./videos/agentVideos/gekko.mp4";
+import isoVoiceLine from "./videos/IsoMatchStart6.wav"
 
 export const agentVideoObject = {
   Sage: sage,
@@ -43,6 +44,22 @@ export const agentVideoObject = {
   Phoenix: phenoix,
   Gekko: gekko,
 };
+
+export const voiceLines = {
+  Gekko:464327068, 
+  Fade:963067082, 
+  Breach:802792402, 
+  Sage:119342169 , 
+  Reyna:847719523 , 
+  Neon:5690468 , 
+  Sova:130865070 ,
+  Astra:594322343,
+  Omen:717842149 , 
+  Killjoy: 1062625853,Skye:452875258 , Raze:632864455,Deadlock: 727149664,Cypher:246514732, Viper:204662687, Yoru:107320642 ,
+  Brimstone:421554800 ,
+   "KAY/O":170847866 , Chamber:765052468 ,
+   Harbor:409447225 ,Phoenix:384959611 , Jett:878055936
+}
 
 export const abilityLink = {
   //gekko
